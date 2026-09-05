@@ -13,35 +13,38 @@ npm run dev
 
 ## Deploy (Cloudflare Pages)
 
-### First time
+### Build settings (quan trọng)
 
-1. Create a GitHub repo and push this folder (`main` branch).
-2. Open [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-3. Select the repo. Build settings:
+Trong project Pages → **Settings** → **Builds & deployments**:
 
 | Setting | Value |
 |--------|--------|
 | Framework preset | Vite |
 | Build command | `npm run build` |
 | Build output directory | `dist` |
-| Root directory | `/` (or leave default) |
+| Deploy command | `npx wrangler pages deploy dist` |
 
-4. **Save and Deploy** → live URL like `https://<project>.pages.dev`.
+> Bắt buộc có Deploy command: dùng **`npx wrangler pages deploy dist`** — không dùng `npx wrangler deploy` (Workers).
 
-Every push to `main` auto-redeploys.
+### First time
 
-### Custom domain (optional, free)
+1. Push repo lên GitHub (`main`).
+2. [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
+3. Chọn repo, điền build settings như bảng trên → **Save and Deploy**.
 
-Pages project → **Custom domains** → add your domain → follow DNS instructions (best with Cloudflare DNS).
+URL: `https://<project>.pages.dev`. Mỗi `git push` lên `main` sẽ auto-redeploy.
 
-### Manual deploy (no Git)
+### Custom domain
+
+Pages → **Custom domains** → thêm domain → trỏ DNS (Mat Bao / Cloudflare).
+
+### Manual deploy (máy local, optional)
 
 ```bash
 npm run build
+npx wrangler login
 npx wrangler pages deploy dist --project-name=tran-nhat-nguyen
 ```
-
-(Requires `npx wrangler login` once.)
 
 ## Build only
 
