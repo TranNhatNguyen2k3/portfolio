@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name=tran-nhat-nguyen",
-    "pages:deploy": "wrangler pages deploy dist"
+    "deploy": "npm run build && wrangler deploy",
+    "pages:deploy": "wrangler deploy"
   },
   "devDependencies": {
     "vite": "^6.2.0",
