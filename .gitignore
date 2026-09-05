@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+.DS_Store
+
+# Local env
+.env
+.env.*
+!.env.example
+
+# Personal / local
+*.pdf
+
+# Logs
+*.log
+npm-debug.log*
+.wrangler/

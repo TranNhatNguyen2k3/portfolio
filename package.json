@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-tran-nhat-nguyen",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=tran-nhat-nguyen"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0",
+    "wrangler": "^4.34.0"
+  }
+}
