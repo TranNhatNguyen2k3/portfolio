@@ -169,6 +169,24 @@ main,
   font-size: 1.08rem;
 }
 
+.hero-role {
+  margin: 1.1rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--teal);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.hero-focus {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -368,6 +386,171 @@ main,
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--teal-mid);
+}
+
+.project-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+}
+
+.project-stack-line {
+  margin: 0.45rem 0 0 !important;
+  font-size: 0.82rem !important;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--teal-mid) !important;
+  max-width: none !important;
+}
+
+.project-flagship {
+  padding-top: 2rem;
+}
+
+.ecosystem {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.eco-block {
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+}
+
+.eco-block h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+
+.eco-tech {
+  margin: 0.25rem 0 0 !important;
+  font-size: 0.8rem !important;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--amber) !important;
+}
+
+@media (min-width: 720px) {
+  .ecosystem {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+
+  .eco-block {
+    padding-top: 0;
+    border-top: none;
+    border-left: 1px solid var(--line);
+    padding-left: 1.25rem;
+  }
+
+  .eco-block:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+.arch-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.arch-card h3 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: var(--teal);
+}
+
+.arch-note {
+  margin: 0 0 1.25rem;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  max-width: 36rem;
+}
+
+.arch-flow {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: arch;
+  border-top: 1px solid var(--line);
+}
+
+.arch-flow li {
+  counter-increment: arch;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1rem;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.arch-flow li::before {
+  content: counter(arch, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--amber);
+  grid-row: span 2;
+}
+
+.arch-label {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.arch-desc {
+  grid-column: 2;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+@media (min-width: 900px) {
+  .arch-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.skill-groups {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.skill-group {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.skill-group h3 {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal-mid);
+}
+
+.skill-group p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+@media (min-width: 720px) {
+  .skill-groups {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
 }
 
 .project h3 {

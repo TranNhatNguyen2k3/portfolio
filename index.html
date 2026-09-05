@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tran Nhat Nguyen — Software Engineer | Backend · IoT · Distributed Systems
+    </title>
     <meta
       name="description"
-      content="Tran Nhat Nguyen — Software Engineer. Backend, Frontend, IoT platforms & distributed systems. Ho Chi Minh City."
+      content="Software Engineer focused on Golang backend systems, IoT platforms, industrial protocols, distributed systems, and cloud-native applications."
     />
+    <meta property="og:title" content="Tran Nhat Nguyen — Software Engineer | Backend · IoT · Distributed Systems" />
+    <meta
+      property="og:description"
+      content="Software Engineer focused on Golang backend systems, IoT platforms, industrial protocols, distributed systems, and cloud-native applications."
+    />
+    <meta property="og:type" content="website" />
     <meta name="theme-color" content="#0B3D3A" />
-    <title>Tran Nhat Nguyen — Software Engineer</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="/favicon.svg" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,29 +33,47 @@
     <header class="site-header" id="top">
       <a class="logo" href="#top">Nguyen<span>.</span></a>
       <nav class="nav" aria-label="Primary">
-        <a href="#profile">Profile</a>
         <a href="#work">Work</a>
+        <a href="#architecture">Architecture</a>
         <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="nav-cta" href="#contact">Hire me</a>
+      <a
+        class="nav-cta"
+        href="https://www.linkedin.com/in/nguyen-tran-259397350/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-brand">
         <div class="hero-copy">
-          <p class="hero-kicker reveal">Ho Chi Minh City · Backend · IoT · Full-stack</p>
+          <p class="hero-kicker reveal">Ho Chi Minh City · Viet Nam</p>
           <h1 id="hero-brand" class="brand reveal">
             Tran Nhat<br />Nguyen
           </h1>
+          <p class="hero-role reveal">
+            Software Engineer
+            <span class="hero-focus">Backend · IoT · Distributed Systems</span>
+          </p>
           <p class="hero-tagline reveal">
-            Software Engineer — building scalable services, industrial device
-            integrations, and cloud-native apps for IoT &amp; Energy platforms.
+            Building backend systems, industrial device integrations, and
+            cloud-native IoT &amp; energy platforms.
           </p>
           <div class="hero-actions reveal">
             <a class="btn btn-primary" href="#work">View work</a>
-            <a class="btn btn-ghost" href="mailto:nguyentn0308@gmail.com">Email me</a>
+            <a
+              class="btn btn-ghost"
+              href="https://www.linkedin.com/in/nguyen-tran-259397350/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a class="btn btn-ghost" href="mailto:nguyentn0308@gmail.com">Email</a>
           </div>
         </div>
         <div class="hero-visual reveal" aria-hidden="true">
@@ -58,23 +83,321 @@
             <div class="panel-orb panel-orb-b"></div>
             <div class="panel-code">
               <span class="line"><i>const</i> engineer = {</span>
-              <span class="line indent">role: <b>"software"</b>,</span>
-              <span class="line indent">focus: <b>"iot &amp; energy"</b>,</span>
-              <span class="line indent">stack: <b>"go · react · k8s"</b>,</span>
+              <span class="line indent">focus: <b>"backend · iot"</b>,</span>
+              <span class="line indent">systems: <b>"distributed"</b>,</span>
+              <span class="line indent">stack: <b>"go · kafka · k8s"</b>,</span>
               <span class="line">};</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section profile" id="profile" aria-labelledby="profile-title">
+      <section class="section work" id="work" aria-labelledby="work-title">
         <div class="section-head">
-          <h2 id="profile-title" class="reveal">Personal information</h2>
+          <h2 id="work-title" class="reveal">Selected work</h2>
           <p class="section-lead reveal">
-            Contact details and professional snapshot from my CV.
+            Production work at iEnergy — IoT energy platform and an end-to-end
+            EV charging ecosystem.
           </p>
         </div>
 
+        <div class="project-list">
+          <article class="project project-flagship reveal">
+            <div class="project-meta">
+              <span class="project-index">01</span>
+              <span class="project-badge">Flagship · Backend / IoT</span>
+            </div>
+            <h3>
+              <a
+                class="project-title-link"
+                href="https://iot.ienergy.vn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >iEnergy Platform</a
+              >
+            </h3>
+            <p class="project-stack-line">
+              Golang · React · PostgreSQL · Kafka · Kubernetes · ArgoCD · MQTT ·
+              Modbus TCP · BACnet · Eclipse Hono
+            </p>
+            <p>
+              IoT and energy management platform for industrial and building
+              environments — device connectivity, telemetry ingestion, backend
+              services, and realtime operational dashboards.
+            </p>
+            <ul class="project-points">
+              <li>
+                Built Golang microservices and REST APIs for device, telemetry,
+                and platform services.
+              </li>
+              <li>
+                Designed device integration supporting MQTT, Modbus TCP, and
+                BACnet for industrial connectivity.
+              </li>
+              <li>
+                Designed event-driven telemetry pipelines with Apache Kafka to
+                decouple ingestion, processing, and downstream services.
+              </li>
+              <li>
+                Built React dashboards for device status, energy consumption,
+                alarms, and operational metrics.
+              </li>
+              <li>
+                Containerized and deployed services with Docker, Kubernetes, and
+                ArgoCD.
+              </li>
+            </ul>
+            <a
+              class="project-link"
+              href="https://iot.ienergy.vn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live product: iot.ienergy.vn →</a
+            >
+          </article>
+
+          <article class="project reveal">
+            <div class="project-meta">
+              <span class="project-index">02</span>
+              <span class="project-badge">Ecosystem · EV Charging</span>
+            </div>
+            <h3>iCharge — EV Charging Ecosystem</h3>
+            <p class="project-stack-line">
+              Golang · Flutter · React · MUI · PostgreSQL · Kafka · OCPP 1.6J ·
+              Firebase · Docker · Kubernetes
+            </p>
+            <p>
+              Contributed to an end-to-end EV charging ecosystem spanning mobile,
+              operator management web, backend services, and OCPP-based charger
+              communication.
+            </p>
+
+            <div class="ecosystem">
+              <div class="eco-block">
+                <h4>Mobile app</h4>
+                <p class="eco-tech">Flutter</p>
+                <ul class="project-points">
+                  <li>Station discovery and charging session flows</li>
+                  <li>Realtime charging status and push notifications (Firebase)</li>
+                  <li>Payment-related workflows and reusable UI components</li>
+                </ul>
+                <a
+                  class="project-link"
+                  href="https://play.google.com/store/apps/details?id=com.ienergy.icharge_mobile_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Google Play: iCharge EVC →</a
+                >
+              </div>
+              <div class="eco-block">
+                <h4>Management platform</h4>
+                <p class="eco-tech">React · MUI</p>
+                <ul class="project-points">
+                  <li>Admin UI for stations, users, pricing, and transactions</li>
+                  <li>Operational dashboards and role-based access control</li>
+                  <li>Realtime station and session status monitoring</li>
+                </ul>
+                <a
+                  class="project-link"
+                  href="https://icharge.ienergy.vn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live: icharge.ienergy.vn →</a
+                >
+              </div>
+              <div class="eco-block">
+                <h4>Backend / CSMS</h4>
+                <p class="eco-tech">Golang · OCPP 1.6J · PostgreSQL</p>
+                <ul class="project-points">
+                  <li>REST APIs for users, stations, sessions, and transactions</li>
+                  <li>OCPP 1.6J integration with charging station management</li>
+                  <li>Start/stop charging, connector status, and charging metrics</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section architecture" id="architecture" aria-labelledby="arch-title">
+        <div class="section-head">
+          <h2 id="arch-title" class="reveal">Architecture &amp; engineering</h2>
+          <p class="section-lead reveal">
+            System design views of the IoT and EV charging platforms — illustrative
+            of how components connect in these products.
+          </p>
+        </div>
+
+        <div class="arch-grid">
+          <article class="arch-card reveal">
+            <h3>IoT platform flow</h3>
+            <p class="arch-note">
+              Device connectivity → protocol ingestion → event streaming → backend
+              services → persistence → dashboard
+            </p>
+            <ol class="arch-flow" aria-label="IoT architecture stages">
+              <li>
+                <span class="arch-label">Devices</span>
+                <span class="arch-desc">Industrial / building equipment</span>
+              </li>
+              <li>
+                <span class="arch-label">Protocols</span>
+                <span class="arch-desc">Modbus TCP · BACnet · MQTT</span>
+              </li>
+              <li>
+                <span class="arch-label">IoT Gateway</span>
+                <span class="arch-desc">Protocol bridging &amp; device status</span>
+              </li>
+              <li>
+                <span class="arch-label">Event streaming</span>
+                <span class="arch-desc">Apache Kafka</span>
+              </li>
+              <li>
+                <span class="arch-label">Backend services</span>
+                <span class="arch-desc">Device &amp; telemetry (Golang)</span>
+              </li>
+              <li>
+                <span class="arch-label">Data</span>
+                <span class="arch-desc">PostgreSQL</span>
+              </li>
+              <li>
+                <span class="arch-label">Dashboard</span>
+                <span class="arch-desc">React realtime monitoring</span>
+              </li>
+            </ol>
+          </article>
+
+          <article class="arch-card reveal">
+            <h3>EV charging flow</h3>
+            <p class="arch-note">
+              Chargers ↔ OCPP CSMS ↔ APIs ↔ mobile &amp; management clients
+            </p>
+            <ol class="arch-flow" aria-label="EV charging architecture stages">
+              <li>
+                <span class="arch-label">Charging stations</span>
+                <span class="arch-desc">EVSE / connectors</span>
+              </li>
+              <li>
+                <span class="arch-label">OCPP 1.6J</span>
+                <span class="arch-desc">Station ↔ CSMS communication</span>
+              </li>
+              <li>
+                <span class="arch-label">CSMS / backend</span>
+                <span class="arch-desc">Golang services · REST APIs</span>
+              </li>
+              <li>
+                <span class="arch-label">Data</span>
+                <span class="arch-desc">PostgreSQL · session &amp; transaction models</span>
+              </li>
+              <li>
+                <span class="arch-label">Clients</span>
+                <span class="arch-desc">Flutter app · React operator web</span>
+              </li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="exp-title">
+        <div class="section-head">
+          <h2 id="exp-title" class="reveal">Experience</h2>
+          <p class="section-lead reveal">
+            Backend, IoT integrations, and cloud-native delivery in production.
+          </p>
+        </div>
+
+        <article class="job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Software Engineer</h3>
+              <p class="job-company">iEnergy JSC</p>
+            </div>
+            <p class="job-period">May 2025 — Aug 2026</p>
+          </div>
+          <ul class="project-points">
+            <li>
+              Built Golang microservices and REST APIs for device management,
+              telemetry, and platform services.
+            </li>
+            <li>
+              Designed an IoT gateway architecture integrating MQTT, Modbus TCP,
+              and BACnet devices with backend services and telemetry persistence
+              in PostgreSQL.
+            </li>
+            <li>
+              Designed event-driven telemetry pipelines with Apache Kafka to
+              decouple device ingestion, processing, and downstream services.
+            </li>
+            <li>
+              Built React dashboards and contributed to Flutter mobile delivery
+              for operational and charging workflows.
+            </li>
+            <li>
+              Built a realtime camera streaming pipeline using RTSP, MediaMTX,
+              and WebRTC/WHEP for browser-based monitoring.
+            </li>
+            <li>
+              Built EV charging management capabilities using OCPP 1.6J,
+              connecting charging stations with backend CSMS services; deployed
+              with Docker, Kubernetes, and ArgoCD.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-head">
+          <h2 id="skills-title" class="reveal">Technical skills</h2>
+          <p class="section-lead reveal">
+            Grouped by layer — from languages to industrial protocols and delivery.
+          </p>
+        </div>
+        <div class="skill-groups reveal">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <p>Go · TypeScript · JavaScript · Dart</p>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <p>REST API · Microservices · WebSocket · Kafka · Auth</p>
+          </div>
+          <div class="skill-group">
+            <h3>IoT / Industrial</h3>
+            <p>MQTT · Modbus TCP · BACnet · OCPP 1.6J</p>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend / Mobile</h3>
+            <p>React · Angular · Flutter</p>
+          </div>
+          <div class="skill-group">
+            <h3>Data</h3>
+            <p>PostgreSQL · MySQL · MongoDB · SQL Server</p>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud / DevOps</h3>
+            <p>Docker · Kubernetes · ArgoCD · Nginx · CI/CD · Linux</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-head">
+          <h2 id="about-title" class="reveal">About</h2>
+        </div>
+        <p class="about-lead reveal">
+          Software Engineer focused on backend systems and IoT platforms.
+          Experienced in building Golang microservices, industrial device
+          integrations, and event-driven architectures using MQTT, Modbus,
+          BACnet, and Kafka. Also work with React, Flutter, and Kubernetes to
+          deliver production IoT and EV charging products. Based in Ho Chi Minh
+          City, Viet Nam.
+        </p>
+      </section>
+
+      <section class="section profile" id="profile" aria-labelledby="profile-title">
+        <div class="section-head">
+          <h2 id="profile-title" class="reveal">Personal information</h2>
+        </div>
         <dl class="profile-grid reveal">
           <div class="profile-item">
             <dt>Full name</dt>
@@ -115,175 +438,9 @@
           </div>
           <div class="profile-item">
             <dt>Focus</dt>
-            <dd>Backend · Frontend · Mobile (Flutter) · IoT platforms · Distributed systems</dd>
+            <dd>Backend · IoT · Distributed systems · Mobile (Flutter)</dd>
           </div>
         </dl>
-      </section>
-
-      <section class="section work" id="work" aria-labelledby="work-title">
-        <div class="section-head">
-          <h2 id="work-title" class="reveal">Selected work</h2>
-          <p class="section-lead reveal">
-            Production products at iEnergy — IoT energy, EV charging mobile, and
-            operator management web.
-          </p>
-        </div>
-
-        <div class="project-list">
-          <article class="project reveal">
-            <div class="project-meta">
-              <span class="project-index">01</span>
-              <span class="project-stack">Golang · React · PostgreSQL · Kafka · K8s</span>
-            </div>
-            <h3>
-              <a
-                class="project-title-link"
-                href="https://iot.ienergy.vn"
-                target="_blank"
-                rel="noopener noreferrer"
-                >iEnergy Platform</a
-              >
-            </h3>
-            <p>
-              IoT / Energy Management Platform for connecting devices, collecting
-              telemetry, and visualizing operational data for energy systems and
-              factories.
-            </p>
-            <ul class="project-points">
-              <li>Golang microservices, RESTful APIs, modular architecture</li>
-              <li>Device connectivity via MQTT, Modbus TCP, BACnet + Kafka pipelines</li>
-              <li>React realtime dashboards: device status, energy use, alarms</li>
-              <li>Docker / Kubernetes / ArgoCD deployment · Eclipse Hono</li>
-            </ul>
-            <a
-              class="project-link"
-              href="https://iot.ienergy.vn"
-              target="_blank"
-              rel="noopener noreferrer"
-              >iot.ienergy.vn →</a
-            >
-          </article>
-
-          <article class="project reveal">
-            <div class="project-meta">
-              <span class="project-index">02</span>
-              <span class="project-stack">Golang · Flutter · PostgreSQL · Kafka · OCPP</span>
-            </div>
-            <h3>iCharge EVC</h3>
-            <p>
-              Cross-platform EV charging mobile app for discovering stations,
-              managing charging sessions, and monitoring charging status in realtime.
-            </p>
-            <ul class="project-points">
-              <li>Golang backend for users, stations, sessions, and transactions</li>
-              <li>OCPP 1.6J integration with CSMS; start/stop, connectors &amp; metrics</li>
-              <li>Firebase push notifications and third-party payment workflows</li>
-              <li>Reusable Flutter UI and end-to-end REST API integration</li>
-            </ul>
-            <a
-              class="project-link"
-              href="https://play.google.com/store/apps/details?id=com.ienergy.icharge_mobile_app"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Google Play: iCharge EVC →</a
-            >
-          </article>
-
-          <article class="project reveal">
-            <div class="project-meta">
-              <span class="project-index">03</span>
-              <span class="project-stack">Golang · React · MUI · PostgreSQL · OCPP</span>
-            </div>
-            <h3>
-              <a
-                class="project-title-link"
-                href="https://icharge.ienergy.vn/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >iCharge Management Web</a
-              >
-            </h3>
-            <p>
-              Web-based EV charging management platform for operators to manage
-              stations, users, sessions, transactions, and operational data.
-            </p>
-            <ul class="project-points">
-              <li>Responsive React + MUI admin UI with role-based access control</li>
-              <li>Dashboards for availability, sessions, energy, and realtime metrics</li>
-              <li>OCPP-based CSMS integration; PostgreSQL models &amp; REST APIs</li>
-              <li>Containerized and deployed with Docker / Kubernetes</li>
-            </ul>
-            <a
-              class="project-link"
-              href="https://icharge.ienergy.vn/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >icharge.ienergy.vn →</a
-            >
-          </article>
-        </div>
-      </section>
-
-      <section class="section experience" id="experience" aria-labelledby="exp-title">
-        <div class="section-head">
-          <h2 id="exp-title" class="reveal">Experience</h2>
-          <p class="section-lead reveal">
-            Hands-on across backend, frontend, IoT platforms, and cloud-native
-            infrastructure.
-          </p>
-        </div>
-
-        <article class="job reveal">
-          <div class="job-head">
-            <div>
-              <h3>Software Engineer</h3>
-              <p class="job-company">iEnergy JSC</p>
-            </div>
-            <p class="job-period">May 2025 — Aug 2026</p>
-          </div>
-          <ul class="project-points">
-            <li>Built Golang microservices and REST APIs for device, telemetry &amp; platform services</li>
-            <li>Designed IoT Gateway architecture (MQTT, Modbus TCP, BACnet) with PostgreSQL pipelines</li>
-            <li>Event-driven processing with Apache Kafka; React dashboards; Flutter mobile</li>
-            <li>Realtime camera streaming with RTSP, MediaMTX, and WebRTC/WHEP</li>
-            <li>EV Charging Management with OCPP 1.6J; deployed on Kubernetes with ArgoCD</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="section about" id="about" aria-labelledby="about-title">
-        <div class="about-grid">
-          <div>
-            <h2 id="about-title" class="reveal">About</h2>
-            <p class="about-lead reveal">
-              Software Engineer with hands-on experience in Backend, Frontend,
-              IoT platforms and distributed systems, with a strong focus on building
-              scalable services, device integrations and cloud-native applications.
-            </p>
-            <p class="reveal">
-              Hands-on experience building IoT and Energy Management platforms,
-              including device connectivity, telemetry ingestion, time-series data
-              processing, realtime dashboards, EV charging systems and camera
-              streaming infrastructure.
-            </p>
-            <p class="reveal">
-              Comfortable working end-to-end: API design, industrial protocols
-              (MQTT, Modbus TCP, BACnet, OCPP), event-driven services with Kafka,
-              React/Flutter clients, and Kubernetes delivery with ArgoCD.
-            </p>
-          </div>
-          <aside class="skills reveal" aria-label="Skills">
-            <h3>Technical skills</h3>
-            <ul>
-              <li>Golang · TypeScript / JavaScript · Dart</li>
-              <li>REST · Microservices · Kafka · WebSocket · Auth</li>
-              <li>MQTT · Modbus TCP · BACnet · OCPP 1.6J</li>
-              <li>React · Angular · Flutter</li>
-              <li>PostgreSQL · MySQL · MongoDB · SQL Server</li>
-              <li>Docker · Kubernetes · ArgoCD · Nginx · CI/CD · Linux</li>
-            </ul>
-          </aside>
-        </div>
       </section>
 
       <section class="section contact" id="contact" aria-labelledby="contact-title">
@@ -308,7 +465,14 @@
             href="https://iot.ienergy.vn"
             target="_blank"
             rel="noopener noreferrer"
-            >Live product</a
+            >iEnergy live</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="https://play.google.com/store/apps/details?id=com.ienergy.icharge_mobile_app"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Google Play</a
           >
         </div>
       </section>
